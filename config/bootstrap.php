@@ -30,7 +30,7 @@ if (!Configure::read('debug')) {
     Configure::write('Cache._cake_core_.duration', '+1 years');
 }
 
-date_default_timezone_set('UTC');
+date_default_timezone_set('Europe/Berlin');
 
 mb_internal_encoding(Configure::read('App.encoding'));
 
