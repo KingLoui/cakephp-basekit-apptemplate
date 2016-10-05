@@ -10,17 +10,6 @@ use App\Controller\AppController;
 
 class PagesController extends AppController
 {
-
-    public function isAuthorized($user)
-    {
-        // Author can access every page
-        if (isset($user['role']) && $user['role'] === 'author') {
-            return true;
-        }
-
-        return parent::isAuthorized($user);
-    }
-
     public function display()
     {
         $path = func_get_args();
