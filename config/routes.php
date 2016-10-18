@@ -9,7 +9,7 @@ Router::defaultRouteClass(DashedRoute::class);
 
 Router::scope('/', function (RouteBuilder $routes) {
 
-    $routes->connect('/', ['plugin' => 'KingLoui/BaseKit','controller' => 'Pages', 'action' => 'display', 'styleguide']);
+    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
 
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
