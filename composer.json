@@ -1,6 +1,6 @@
 {
     "name": "cakephp/app",
-    "description": "CakePHP skeleton app",
+    "description": "BaseKit skeleton app",
     "homepage": "http://cakephp.org",
     "type": "project",
     "license": "MIT",
@@ -11,6 +11,8 @@
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
         "kingloui/cakephp-basekit": "dev-master",
+        "kingloui/cakephp-basekit-themes": "dev-master",
+        "kingloui/cakephp-basekit-theme-twentysixteen": "dev-master",
         "kingloui/cakephp-basekit-users": "dev-master"
     },
     "require-dev": {
@@ -18,8 +20,6 @@
         "cakephp/debug_kit": "~3.2",
         "cakephp/bake": "~1.1"
     },
-
-
     "suggest": {
         "markstory/asset_compress": "An asset compression plugin which provides file concatenation and a flexible filter system for preprocessing and minification.",
         "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",

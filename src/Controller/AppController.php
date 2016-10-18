@@ -12,5 +12,7 @@ class AppController extends Controller
         parent::initialize();
         $this->loadComponent('KingLoui/BaseKit.BaseKit');
         $this->loadComponent('KingLoui/BaseKitUsers.BaseKitUsers');
+        $this->loadComponent('KingLoui/BaseKitThemes.BaseKitThemes');
+        $this->loadComponent('KingLoui/BaseKitThemeTwentySixteen.BaseKitThemeTwentySixteen');
     }
 }
