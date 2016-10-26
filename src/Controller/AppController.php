@@ -15,4 +15,11 @@ class AppController extends Controller
         $this->loadComponent('KingLoui/BaseKitThemes.BaseKitThemes');
         $this->loadComponent('KingLoui/BaseKitThemeTwentySixteen.BaseKitThemeTwentySixteen');
     }
+
+    public function beforeRender(Event $event) {
+
+    	if (!isset($this->request->params['prefix']) || $this->request->params['prefix'] !== 'admin') {
+    		//$this->viewBuilder()->layout('dark');
+    	}
+    }
 }
