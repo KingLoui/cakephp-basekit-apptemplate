@@ -97,7 +97,7 @@ Plugin::load('Migrations');
 // Load BaseKit and Plugins
 Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
 Plugin::load('KingLoui/BaseKitUsers', ['bootstrap' => true, 'routes' => true]);
-Plugin::load('KingLoui/BaseKitThemes', ['bootstrap' => false, 'routes' => false]);
+Plugin::load('KingLoui/BaseKitThemes', ['bootstrap' => true, 'routes' => false]);
 Plugin::load('KingLoui/BaseKitThemeTwentySixteen', ['bootstrap' => true, 'routes' => false]);
 Plugin::load('KingLoui/BaseKitConstruct', ['bootstrap' => true, 'routes' => true]);
 

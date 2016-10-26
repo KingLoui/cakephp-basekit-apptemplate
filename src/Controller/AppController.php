@@ -18,8 +18,8 @@ class AppController extends Controller
 
     public function beforeRender(Event $event) {
 
-    	if (!isset($this->request->params['prefix']) || $this->request->params['prefix'] !== 'admin') {
-    		//$this->viewBuilder()->layout('dark');
-    	}
+    	// if (!isset($this->request->params['prefix']) || $this->request->params['prefix'] !== 'admin') {
+    		
+    	// }
     }
 }
