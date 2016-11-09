@@ -94,22 +94,21 @@ if (Configure::read('debug')) {
 }
 Plugin::load('Migrations');
 
-// Load BaseKit and Plugins
+// Load BaseKit
 Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
-Plugin::load('KingLoui/BaseKitUsers', ['bootstrap' => true, 'routes' => true]);
-Plugin::load('KingLoui/BaseKitThemes', ['bootstrap' => true, 'routes' => false]);
-Plugin::load('KingLoui/BaseKitThemeTwentySixteen', ['bootstrap' => true, 'routes' => false]);
-Plugin::load('KingLoui/BaseKitConstruct', ['bootstrap' => true, 'routes' => true]);
-
 Configure::load('basekit/basekit');
+
+// Load Theme
+Plugin::load('KingLoui/BaseKitThemeTwentySixteen', ['bootstrap' => true, 'routes' => false]);
 Configure::load('basekit/themes');
 
-//Configure::write('BaseKit.site_name', 'My Personal Blog', 'BaseKit');
-//Configure::dump('BaseKit', 'BaseKit', ['BaseKit']);
-
-//debug(Configure::read('BaseKit', 'BaseKit'));
-
-
-
-
+// Load Child Theme
 Plugin::load('ChildTheme', ['bootstrap' => false, 'routes' => true]);
+
+// DB Configuration tests
+/*
+Configure::write('BaseKit.site_name', 'My Personal Blog', 'BaseKit');
+Configure::dump('BaseKit', 'BaseKit', ['BaseKit']);
+Configure::dump('BaseKitThemeTwentySixteen', 'BaseKit', ['BaseKitThemeTwentySixteen']);
+debug(Configure::read('BaseKit', 'BaseKit'));
+*/
