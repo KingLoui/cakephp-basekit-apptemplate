@@ -10,8 +10,23 @@ $config = [
 		//'LayoutDefault' => 'demo/dark'		
 	],
 	'BaseKitThemeTwentySixteen' => [
-		'NavSidebar' => [
-			'HeaderLogo' => 'MH'
+		'Admin' => [
+			'Skin' => 7,
+			'Sidebar' => [
+				'ShowThemeExamples' => true,
+				'ShowThemeSettings' => true,
+				'HeaderLogo' => 'MH',
+				'Collapse' => false,
+				'Fixed' => true,
+				'ShowHideEffect' => 'reveal'
+			],
+			'NavTop' => [
+				'Fixed' => true,
+				'FixedFullWidth' => false
+			]
+		],
+		'Default' => [
+		
 		]
 	]
 	
