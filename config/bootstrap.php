@@ -104,5 +104,12 @@ Plugin::load('KingLoui/BaseKitConstruct', ['bootstrap' => true, 'routes' => true
 Configure::load('basekit/basekit');
 Configure::load('basekit/themes');
 
+//Configure::write('BaseKit.site_name', 'My Personal Blog', 'BaseKit');
+//Configure::dump('BaseKit', 'BaseKit', ['BaseKit']);
+
+//debug(Configure::read('BaseKit', 'BaseKit'));
 
 
+
+
+Plugin::load('ChildTheme', ['bootstrap' => false, 'routes' => true]);
