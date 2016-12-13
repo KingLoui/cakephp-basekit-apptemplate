@@ -4,29 +4,23 @@ use Cake\Core\Configure;
 
 $config = [
 	'BaseKitThemes' => [
-		'ThemeAdmin' => 'KingLoui/BaseKitThemeTwentySixteen',
-		'ThemeDefault' => 'KingLoui/BaseKitThemeTwentySixteen',
+		'ThemeAdmin' => 'KingLoui/BaseKitThemeInspinia',
+		'ThemeDefault' => 'KingLoui/BaseKitThemeSmarty',
 		'LayoutAdmin' => 'admin',
 		//'LayoutDefault' => 'demo/dark'		
 	],
-	'BaseKitThemeTwentySixteen' => [
-		'Admin' => [
-			'Skin' => 7,
-			'Sidebar' => [
-				'ShowThemeExamples' => true,
-				'ShowThemeSettings' => true,
-				'HeaderLogo' => 'MH',
-				'Collapse' => false,
-				'Fixed' => true,
-				'ShowHideEffect' => 'reveal'
-			],
-			'NavTop' => [
-				'Fixed' => true,
-				'FixedFullWidth' => false
-			]
+	'BaseKitThemeInspinia' => [
+		'Skin' => 7,
+		'Sidebar' => [
+			'ShowThemeExamples' => true,
+			'ShowThemeSettings' => true,
+			'HeaderLogo' => 'MH',
+			'Fixed' => true,
+			'ShowHideEffect' => 'reveal'
 		],
-		'Default' => [
-		
+		'NavTop' => [
+			'Fixed' => true,
+			'FixedFullWidth' => false
 		]
 	]
 	

@@ -89,6 +89,7 @@ Type::build('datetime')
  * My Settings
  */
 
+// Load Core Plugins
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
@@ -99,11 +100,18 @@ Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
 Configure::load('basekit/basekit');
 
 // Load Theme
-Plugin::load('KingLoui/BaseKitThemeTwentySixteen', ['bootstrap' => true, 'routes' => false]);
+//Plugin::load('KingLoui/BaseKitThemeTwentySixteen', ['bootstrap' => true, 'routes' => false]);
+Plugin::load('KingLoui/BaseKitThemeInspinia', ['bootstrap' => true, 'routes' => false]);
+Plugin::load('KingLoui/BaseKitThemeSmarty', ['bootstrap' => true, 'routes' => false]);
 Configure::load('basekit/themes');
 
 // Load Child Theme
 Plugin::load('ChildTheme', ['bootstrap' => false, 'routes' => true]);
+
+
+
+
+
 
 // DB Configuration tests
 /*

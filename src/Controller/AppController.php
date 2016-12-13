@@ -13,7 +13,8 @@ class AppController extends Controller
         $this->loadComponent('KingLoui/BaseKit.BaseKit');
         $this->loadComponent('KingLoui/BaseKitUsers.BaseKitUsers');
         $this->loadComponent('KingLoui/BaseKitThemes.BaseKitThemes');
-        $this->loadComponent('KingLoui/BaseKitThemeTwentySixteen.BaseKitThemeTwentySixteen');
+        $this->loadComponent('KingLoui/BaseKitThemeInspinia.BaseKitThemeInspinia');
+        //$this->loadComponent('KingLoui/BaseKitThemeSmarty.BaseKitThemeSmarty');
     }
 
     public function beforeRender(Event $event)
