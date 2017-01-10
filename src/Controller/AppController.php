@@ -11,10 +11,10 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->loadComponent('KingLoui/BaseKit.BaseKit');
+        $this->loadComponent('KingLoui/BaseKit.Themes');
         $this->loadComponent('KingLoui/BaseKitUsers.BaseKitUsers');
-        $this->loadComponent('KingLoui/BaseKitThemes.BaseKitThemes');
-        $this->loadComponent('KingLoui/BaseKitThemeInspinia.BaseKitThemeInspinia');
-        //$this->loadComponent('KingLoui/BaseKitThemeSmarty.BaseKitThemeSmarty');
+        $this->loadComponent('KingLoui/BaseKitThemeInspinia.Theme');
+        $this->loadComponent('KingLoui/BaseKitThemeSmarty.Theme');
     }
 
     public function beforeRender(Event $event)

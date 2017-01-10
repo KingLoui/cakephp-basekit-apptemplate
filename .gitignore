@@ -2,12 +2,7 @@
 /config/app.php
 /tmp/*
 /logs/*
-
-
-/vendor/*
-/config/app.php
-/tmp/*
-/logs/*
+/.vagrant
 
 # Folder view configuration files
 .DS_Store

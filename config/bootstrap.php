@@ -95,21 +95,25 @@ if (Configure::read('debug')) {
 }
 Plugin::load('Migrations');
 
+
+
+
+
+
+
+
 // Load BaseKit
 Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
-Configure::load('basekit/basekit');
 
-// Load Theme
-//Plugin::load('KingLoui/BaseKitThemeTwentySixteen', ['bootstrap' => true, 'routes' => false]);
+// Load BaseKit Plugins
+Plugin::load('KingLoui/BaseKitUsers', ['bootstrap' => true, 'routes' => true]);
+Plugin::load('KingLoui/BaseKitConstruct', ['bootstrap' => true, 'routes' => true]);
+
+// Load BaseKit Themes
 Plugin::load('KingLoui/BaseKitThemeInspinia', ['bootstrap' => true, 'routes' => false]);
 Plugin::load('KingLoui/BaseKitThemeSmarty', ['bootstrap' => true, 'routes' => false]);
-Configure::load('basekit/themes');
-
-// Load Child Theme
 Plugin::load('ChildTheme', ['bootstrap' => false, 'routes' => true]);
-
-
-
+Configure::load('basekit/themesettings');
 
 
 
