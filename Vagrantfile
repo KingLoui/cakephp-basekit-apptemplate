@@ -26,7 +26,8 @@ Vagrant.configure("2") do |config|
         sudo sed -i s,/var/www/public,/var/www/webroot,g /etc/apache2/sites-available/scotchbox.local.conf
         sudo service apache2 restart
         sudo chmod +x /var/www/build.sh
-        /var/www/build.sh
+        cd /var/www/
+        ./build.sh
     SHELL
 
 end
