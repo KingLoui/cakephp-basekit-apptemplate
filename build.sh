@@ -5,9 +5,9 @@ echo "### INSTALL/UPDATE ###";
 [ ! -f composer.phar ] && curl -sS https://getcomposer.org/installer | php
 php composer.phar selfupdate
 
-# git pull
+#git pull
 
-# php composer.phar install --prefer-dist --no-dev --optimize-autoloader --no-interaction
+#php composer.phar install --prefer-dist --no-dev --optimize-autoloader --no-interaction
 
 chmod +x bin/cake
 
